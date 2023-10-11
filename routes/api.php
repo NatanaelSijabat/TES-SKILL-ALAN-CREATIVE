@@ -25,3 +25,4 @@ Route::get('/food', [FoodController::class, 'index']);
 Route::get('/food/{id}', [FoodController::class, 'show']);
 Route::post('/food', [FoodController::class, 'store']);
 Route::post('/food/{id}', [FoodController::class, 'update']);
+Route::delete('/food/{id}', [FoodController::class, 'destroy']);
